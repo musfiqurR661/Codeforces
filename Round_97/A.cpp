@@ -11,11 +11,7 @@ int main() {
     }
 
     for (int i = 1; i <= n; i++) {
-        int firstGiftGiver = giftFrom[i];                     
-        int secondGiftGiver = giftFrom[firstGiftGiver];      
-        int thirdGiftGiver = giftFrom[secondGiftGiver];       
-
-        cout << thirdGiftGiver << " ";                       
+        cout << giftFrom[giftFrom[giftFrom[i]]] << " ";
     }
 
     return 0;
